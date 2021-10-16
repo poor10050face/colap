@@ -26,7 +26,6 @@ print("User Created and Configured")
 
 
 
-
 #@title **RDP**
 #@markdown  It takes 4-5 minutes for installation
 
@@ -35,7 +34,7 @@ import subprocess
 
 #@markdown  Visit http://remotedesktop.google.com/headless and Copy the command after authentication
 
-CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AX4XfWhCY3CdbDQPEhc5u3qKfeVjmZXapW8CvCOf1tZJL3qWf5QRvIhNdSZ-4yOSFRW7XA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)" --name=$(hostname)" #@param {type:"string"}
+CRP = "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=\"4/0AX4XfWhCY3CdbDQPEhc5u3qKfeVjmZXapW8CvCOf1tZJL3qWf5QRvIhNdSZ-4yOSFRW7XA\" --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$(hostname)" #@param {type:"string"}
 
 #@markdown Enter a pin more or equal to 6 digits
 Pin = 123456 #@param {type: "integer"}
